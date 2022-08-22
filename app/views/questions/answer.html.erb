@@ -1,0 +1,9 @@
+<% if params[:query].chars.last == "?" %>
+<%= "Silly question, get dressed and go to work!" %>
+<% elsif params[:query]== "I am going to work"   %>
+<%= "Great!" %>
+<% else %>
+<%= "I don't care, get dressed and go to work!" %>
+<% end %>
+
+<%= link_to "ask a new question", root_path %>
